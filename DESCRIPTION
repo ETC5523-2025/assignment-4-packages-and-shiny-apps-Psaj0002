@@ -1,17 +1,29 @@
 Package: CovidDataPackage1
-Title: What the Package Does (One Line, Title Case)
-Version: 0.0.0.9000
+Title: COVID-19 Outbreak Risk Explorer and Dataset
+Version: 1.0.0
 Authors@R: 
-    person("First", "Last", , "first.last@example.com", role = c("aut", "cre"))
-Description: What the package does (one paragraph).
+    person("Pranav", "Sajeev", email = "psaj0002@student.monash.edu", role = c("aut", "cre"))
+Description: 
+    This package provides a simulated dataset and interactive Shiny application 
+    for exploring COVID-19 outbreak dynamics under different public-health conditions. 
+    The dataset 'covid_data' contains information on vaccination rates, vaccine efficacy, 
+    testing frequency, variant transmissibility (R0), and outbreak risk. 
+    The accompanying Shiny app, which can be launched with `run_app()`, allows users to visualize 
+    how these factors interact to influence the likelihood of outbreaks for different 
+    variants. 
 License: MIT + file LICENSE
 Encoding: UTF-8
 Roxygen: list(markdown = TRUE)
 RoxygenNote: 7.3.3
 Depends: 
     R (>= 3.5)
+Imports:
+    shiny,
+    ggplot2,
+    dplyr
 LazyData: true
 Suggests: 
     knitr,
-    rmarkdown
+    rmarkdown,
+    devtools
 VignetteBuilder: knitr

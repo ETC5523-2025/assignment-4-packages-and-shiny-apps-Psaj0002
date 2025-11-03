@@ -6,6 +6,8 @@
 
 ## Documentation
 
+The documentation and website link can be found [here](https://etc5523-2025.github.io/assignment-4-packages-and-shiny-apps-Psaj0002/).
+
 ## Installation
 
 You can install the development version of CovidDataPackage1 from [GitHub](https://github.com/) with:
