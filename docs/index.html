@@ -5,14 +5,14 @@
 <meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>What the Package Does (One Line, Title Case) • CovidDataPackage1</title>
+<title>COVID-19 Outbreak Risk Explorer and Dataset • CovidDataPackage1</title>
 <!-- jquery --><script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script><!-- Bootstrap --><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.4.1/css/bootstrap.min.css" integrity="sha256-bZLfwXAP04zRMK2BjiO8iu9pf4FbLqX6zitd+tIvLhE=" crossorigin="anonymous">
 <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.4.1/js/bootstrap.min.js" integrity="sha256-nuL8/2cJ5NDSSwnKD8VqreErSWHtnEP9E7AySL+1ev4=" crossorigin="anonymous"></script><!-- bootstrap-toc --><link rel="stylesheet" href="bootstrap-toc.css">
 <script src="bootstrap-toc.js"></script><!-- Font Awesome icons --><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css" integrity="sha256-mmgLkCYLUQbXn0B1SRqzHar6dCnv9oZFPEC1g1cwlkk=" crossorigin="anonymous">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/v4-shims.min.css" integrity="sha256-wZjR52fzng1pJHwx4aV2AO3yyTOXrcDW7jBpJtTwVxw=" crossorigin="anonymous">
 <!-- clipboard.js --><script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.6/clipboard.min.js" integrity="sha256-inc5kl9MA1hkeYUt+EC3BhlIgyp/2jDIyBLS6k3UxPI=" crossorigin="anonymous"></script><!-- headroom.js --><script src="https://cdnjs.cloudflare.com/ajax/libs/headroom/0.11.0/headroom.min.js" integrity="sha256-AsUX4SJE1+yuDu5+mAVzJbuYNPHj/WroHuZ8Ir/CkE0=" crossorigin="anonymous"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/headroom/0.11.0/jQuery.headroom.min.js" integrity="sha256-ZX/yNShbjqsohH1k95liqY9Gd8uOiE1S4vZc+9KQ1K4=" crossorigin="anonymous"></script><!-- pkgdown --><link href="pkgdown.css" rel="stylesheet">
-<script src="pkgdown.js"></script><meta property="og:title" content="What the Package Does (One Line, Title Case)">
-<meta property="og:description" content="What the package does (one paragraph).">
+<script src="pkgdown.js"></script><meta property="og:title" content="COVID-19 Outbreak Risk Explorer and Dataset">
+<meta property="og:description" content="This package provides a simulated dataset and interactive Shiny application for exploring COVID-19 outbreak dynamics under different public-health conditions. The dataset covid_data contains information on vaccination rates, vaccine efficacy, testing frequency, variant transmissibility (R0), and outbreak risk. The accompanying Shiny app, which can be launched with `run_app()`, allows users to visualize how these factors interact to influence the likelihood of outbreaks for different variants.">
 <!-- mathjax --><script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js" integrity="sha256-nvJJv9wWKEm88qvoQl9ekL2J+k/RWIsaSScxxlsrv8k=" crossorigin="anonymous"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/config/TeX-AMS-MML_HTMLorMML.js" integrity="sha256-84DKXVJXs0/F8OTMzX4UR909+jtl4G7SPypPavF+GfA=" crossorigin="anonymous"></script><!--[if lt IE 9]>
 <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
 <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
@@ -33,7 +33,7 @@
       </button>
       <span class="navbar-brand">
         <a class="navbar-link" href="index.html">CovidDataPackage1</a>
-        <span class="version label label-default" data-toggle="tooltip" data-placement="bottom" title="">0.0.0.9000</span>
+        <span class="version label label-default" data-toggle="tooltip" data-placement="bottom" title="">1.0.0</span>
       </span>
     </div>
 
@@ -73,24 +73,26 @@
 <!-- badges: start -->
 <!-- badges: end -->
 <div class="section level2">
-<h2 id="documentation">Documentation<a class="anchor" aria-label="anchor" href="#documentation"></a>
+<h2 id="overview">Overview<a class="anchor" aria-label="anchor" href="#overview"></a>
 </h2>
+<p><code>CovidDataPackage1</code> helps users understand how public-health factors influence the probability of a COVID-19 outbreak.<br>
+The package includes:</p>
+<ul>
+<li>
+<strong>A dataset</strong> (<code>covid_data</code>) containing simulated outbreak-related variables.<br>
+</li>
+<li>
+<strong>An interactive Shiny app</strong> (<code><a href="reference/run_app.html">run_app()</a></code>) that visualizes how these factors interact across different variants.<br>
+</li>
+<li>
+<strong>A vignette</strong> (<code>COVID_Quarantine</code>) explaining how to use the dataset and app together.</li>
+</ul>
+<p>The package demonstrates how R packages can integrate data, analysis, and interactivity for reproducible public-health modelling.</p>
 </div>
 <div class="section level2">
-<h2 id="installation">Installation<a class="anchor" aria-label="anchor" href="#installation"></a>
+<h2 id="website">Website<a class="anchor" aria-label="anchor" href="#website"></a>
 </h2>
-<p>You can install the development version of CovidDataPackage1 from <a href="https://github.com/" class="external-link">GitHub</a> with:</p>
-<div class="sourceCode" id="cb1"><pre class="downlit sourceCode r">
-<code class="sourceCode R"><span><span class="co"># install.packages("pak")</span></span>
-<span><span class="fu">pak</span><span class="fu">::</span><span class="fu">pak</span><span class="op">(</span><span class="st">"ETC5523-2025/assignment-4-packages-and-shiny-apps-Psaj0002"</span><span class="op">)</span></span></code></pre></div>
-</div>
-<div class="section level2">
-<h2 id="example">Example<a class="anchor" aria-label="anchor" href="#example"></a>
-</h2>
-<p>This is a basic example which shows you how to solve a common problem:</p>
-<div class="sourceCode" id="cb2"><pre class="downlit sourceCode r">
-<code class="sourceCode R"><span><span class="kw"><a href="https://rdrr.io/r/base/library.html" class="external-link">library</a></span><span class="op">(</span><span class="va">CovidDataPackage1</span><span class="op">)</span></span>
-<span><span class="co">## basic example code</span></span></code></pre></div>
+<p>The documentation and website link can be found <a href="https://etc5523-2025.github.io/assignment-4-packages-and-shiny-apps-Psaj0002/" class="external-link">here</a>.</p>
 </div>
 </div>
   </div>
@@ -115,7 +117,7 @@
 <div class="developers">
 <h2 data-toc-skip>Developers</h2>
 <ul class="list-unstyled">
-<li>First Last <br><small class="roles"> Author, maintainer </small>   </li>
+<li>Pranav Sajeev <br><small class="roles"> Author, maintainer </small>   </li>
 </ul>
 </div>
 
@@ -127,7 +129,7 @@
 
       <footer><div class="copyright">
   <p></p>
-<p>Developed by First Last.</p>
+<p>Developed by Pranav Sajeev.</p>
 </div>
 
 <div class="pkgdown">
