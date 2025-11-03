@@ -7,5 +7,6 @@
 run_app()
 }
 \description{
-Launch the Shiny App
+This function launches the COVID-19 Outbreak Risk Explorer Shiny app
+included in the CovidDataPackage1 package.
 }
