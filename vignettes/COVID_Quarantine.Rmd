@@ -1,0 +1,46 @@
+---
+title: "COVID_Quarantine"
+output: rmarkdown::html_vignette
+vignette: >
+  %\VignetteIndexEntry{COVID_Quarantine}
+  %\VignetteEngine{knitr::rmarkdown}
+  %\VignetteEncoding{UTF-8}
+---
+
+```{r, include = FALSE}
+knitr::opts_chunk$set(
+  collapse = TRUE,
+  comment = "#>"
+)
+```
+
+```{r setup}
+library(CovidDataPackage1)
+```
+## Overview
+
+The **COVID-19 Outbreak Risk Explorer** is an interactive Shiny application included within the `CovidDataPackage1` package.  
+It allows users to explore how different factors such as vaccination rates, vaccine efficacy, testing frequency, and viral transmissibility (R₀) influence the overall probability of a COVID-19 outbreak under different variant scenarios.
+
+This app provides an interactive visual environment to replicate and extend the findings from the accompanying dataset `covid_data`, which is stored within the package. The dataset contains simulated information on key public-health parameters and their relationships to outbreak risk.
+
+---
+
+## Data Description
+
+The dataset `covid_data` includes the following variables:
+
+| Variable | Description |
+|-----------|--------------|
+| `variant` | The COVID-19 variant (e.g., Wildtype, Delta, Omicron). |
+| `vaccination_rate` | Proportion of the population vaccinated. |
+| `vaccine_efficacy` | Effectiveness of the vaccine in preventing infection. |
+| `testing_freq_days` | Average number of days between population testing. |
+| `R0` | Basic reproduction number — the average number of secondary infections caused by one infected person. |
+| `outbreak_risk` | Simulated probability of an outbreak occurring under the specified conditions. |
+
+These variables can be explored interactively in the Shiny app to observe how changes in vaccination or testing policies might affect outbreak potential.
+
+---
+
+
