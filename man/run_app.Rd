@@ -2,11 +2,34 @@
 % Please edit documentation in R/run_app.R
 \name{run_app}
 \alias{run_app}
-\title{Launch the Shiny App}
+\title{Launch the COVID-19 Outbreak Risk Explorer App}
 \usage{
 run_app()
 }
 \description{
-This function launches the COVID-19 Outbreak Risk Explorer Shiny app
-included in the CovidDataPackage1 package.
+This function launches the interactive Shiny application included
+with the \strong{CovidDataPackage1} package. The app visualizes how
+public-health variables like vaccination rate, vaccine efficacy,
+testing frequency, and virus transmissibility (R₀) influence the
+probability of a COVID-19 outbreak under different variant scenarios.
+}
+\details{
+The app uses the dataset \code{\link{covid_data}} to generate
+dynamic plots that help users explore relationships between variables
+and understand outbreak dynamics across variants.
+\subsection{Features}{
+\itemize{
+\item Interactive selection of COVID variant, x-axis, and y-axis variables.
+\item Real-time visualization with regression trend lines.
+\item Built-in descriptions and interpretation guidance.
+\item Clean, professional styling for clear data communication.
+}
+}
+
+\subsection{Example}{
+
+\if{html}{\out{<div class="sourceCode r">}}\preformatted{# Launch the Shiny app
+CovidDataPackage1::run_app()
+}\if{html}{\out{</div>}}
+}
 }
