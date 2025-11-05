@@ -10,12 +10,10 @@
 #'   \item{vaccination_rate}{Proportion of the population vaccinated.}
 #'   \item{vaccine_efficacy}{Effectiveness of the vaccine in preventing infection.}
 #'   \item{testing_freq_days}{Average number of days between population testing.}
-#'   \item{R0}{Basic reproduction number — the average number of secondary infections
+#'   \item{R0}{Basic reproduction number,i.e, the average number of secondary infections
 #'   caused by one infected person.}
 #'   \item{outbreak_risk}{Simulated probability of a COVID-19 outbreak under
 #'   given conditions.}
-#'   \item{X}{Row identifier used internally (not relevant for analysis).}
-#' }
 #'
 #' @details
 #' The dataset was created to demonstrate how disease transmission parameters interact
